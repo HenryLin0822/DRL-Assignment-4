@@ -129,7 +129,7 @@ class Agent:
         ).to(device)
         
         # Load pre-trained model if available
-        model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "humanoid_sac_best_model.pt")
+        model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "humanoid_sac_model.pt")
         if os.path.exists(model_path):
             self.load_model(model_path)
     
